@@ -11,11 +11,12 @@ pipeline {
 			sh './gradlew assemble'
 		}
             }
-        }
-        stage('Archive') {
-            steps {
-                archiveArtifacts artifacts: 'build/libs/*.jar'
+            post {
+                success {
+                   archiveArtifacts artifacts: 'build/libs/*.jar'
+                }
             }
+
         }
         stage('Test') {
             steps {
