@@ -1,3 +1,3 @@
 # hello-gradle
 
-Esta es laram jenkinsfile-gradle del repositorio hello-gradle
+Esta es la rama jenkinsfile-gradle del repositorio hello-gradle
